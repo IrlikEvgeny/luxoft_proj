@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="О Нас"
+        android:id="@+id/menuUS"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:text="Timer"
+        android:id="@+id/menuTimer"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="127dp"
+        android:layout_below="@+id/menuUS"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="О Приложении"
+        android:id="@+id/menuApp"
+        android:layout_gravity="bottom"
+        android:layout_above="@+id/menuTimer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:id="@+id/menuSettings"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/menuTimer"
+        android:layout_alignEnd="@+id/menuTimer"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="94dp"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Статистика"
+        android:id="@+id/menuStat"
+        android:onClick="onClick"
+        android:layout_alignTop="@+id/menuSettings"
+        android:layout_alignRight="@+id/menuApp"
+        android:layout_alignEnd="@+id/menuApp"
+        android:layout_marginRight="57dp"
+        android:layout_marginEnd="57dp" />
+
+
+
+
+</RelativeLayout>
+
